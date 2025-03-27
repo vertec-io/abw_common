@@ -1,8 +1,7 @@
 use std::str::FromStr;
 
 pub trait Bounded {
-    type ValueType: Ord
-        + PartialOrd
+    type ValueType: PartialOrd
         + Copy
         + FromStr
         + std::fmt::Display
